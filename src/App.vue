@@ -1,32 +1,39 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <Header />
     </div>
     <router-view />
   </div>
 </template>
 
+<script>
+import Header from "./components/Header.vue";
+export default {
+  name: "App",
+  components: {
+    Header,
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: "Stars";
+  src: url("../Starjedi.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+body {
+  background-color: #000000;
 }
 </style>
