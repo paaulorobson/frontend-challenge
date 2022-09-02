@@ -78,4 +78,9 @@ export default {
   padding: 0.5rem 5rem;
   border-radius: 1.563rem;
 }
+
+.header__call-to-action {
+  border: 1px solid #ffe81f;
+  padding: 0.5rem 1rem;
+}
 </style>

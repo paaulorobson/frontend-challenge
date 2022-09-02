@@ -2,7 +2,9 @@
   <div class="personagens">
     <h1>Personagens</h1>
 
-    <Personagem />
+    <div class="personagens__wrapper">
+      <Personagem />
+    </div>
   </div>
 </template>
 
@@ -22,5 +24,12 @@ export default {
   text-align: center;
   font-family: "Stars", sans-serif;
   color: #ffe81f;
+  font-weight: normal;
+}
+
+.personagens__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  margin-top: 2.5rem;
 }
 </style>
